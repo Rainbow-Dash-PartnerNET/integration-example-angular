@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --output-hashing none",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "rename": "cp docs/main.*.js docs/main.js",
-    "deploy": "ng build --output-path docs --base-href https://rainbow-dash-partnernet.github.io/integration-example-angular/ && npm run rename"
+    "deploy": "ng build  --output-hashing none --output-path docs --base-href https://rainbow-dash-partnernet.github.io/integration-example-angular/"
   },
   "private": true,
   "dependencies": {
